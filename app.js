@@ -25,5 +25,5 @@ app.use('/api', apiRouter);
 app.use(errorHandler);
 
 app.listen(config.PORT, () => {
-  logger.info(`Server running in ${config.ENV} mode on port ${config.PORT}`);
+  console.log(`Server running in ${config.ENV} mode on port ${config.PORT}`);
 });

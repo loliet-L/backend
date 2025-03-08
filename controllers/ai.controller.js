@@ -13,7 +13,7 @@ export const calculateEmissions = async (req, res, next) => {
     }
 
     const co2 = await aiService.calculateEmissions(vehicle, distance);
-    logger.info(`Calculated emissions: ${co2}kg for ${vehicle} ${distance}km`);
+    console.log(`Calculated emissions: ${co2}kg for ${vehicle} ${distance}km`);
     
     res.json({
       success: true,
